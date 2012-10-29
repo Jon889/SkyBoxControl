@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB750EC5163ECC880084A6B6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB750EC4163ECC880084A6B6 /* Cocoa.framework */; };
+		AB750ECF163ECC880084A6B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB750ECD163ECC880084A6B6 /* InfoPlist.strings */; };
+		AB750ED1163ECC880084A6B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB750ED0163ECC880084A6B6 /* main.m */; };
+		AB750ED5163ECC880084A6B6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AB750ED3163ECC880084A6B6 /* Credits.rtf */; };
+		AB750ED8163ECC880084A6B6 /* SBCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB750ED7163ECC880084A6B6 /* SBCAppDelegate.m */; };
+		AB750EDB163ECC880084A6B6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB750ED9163ECC880084A6B6 /* MainMenu.xib */; };
+		AB750EE3163ECC890084A6B6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB750EE2163ECC890084A6B6 /* SenTestingKit.framework */; };
+		AB750EE4163ECC890084A6B6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB750EC4163ECC880084A6B6 /* Cocoa.framework */; };
+		AB750EEC163ECC890084A6B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB750EEA163ECC890084A6B6 /* InfoPlist.strings */; };
+		AB750EEF163ECC890084A6B6 /* SkyBoxControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB750EEE163ECC890084A6B6 /* SkyBoxControlTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB750EE5163ECC890084A6B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB750EB7163ECC880084A6B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB750EBF163ECC880084A6B6;
+			remoteInfo = SkyBoxControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB750EC0163ECC880084A6B6 /* SkyBoxControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyBoxControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB750EC4163ECC880084A6B6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AB750EC7163ECC880084A6B6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AB750EC8163ECC880084A6B6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AB750EC9163ECC880084A6B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB750ECC163ECC880084A6B6 /* SkyBoxControl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SkyBoxControl-Info.plist"; sourceTree = "<group>"; };
+		AB750ECE163ECC880084A6B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB750ED0163ECC880084A6B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB750ED2163ECC880084A6B6 /* SkyBoxControl-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkyBoxControl-Prefix.pch"; sourceTree = "<group>"; };
+		AB750ED4163ECC880084A6B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		AB750ED6163ECC880084A6B6 /* SBCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBCAppDelegate.h; sourceTree = "<group>"; };
+		AB750ED7163ECC880084A6B6 /* SBCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBCAppDelegate.m; sourceTree = "<group>"; };
+		AB750EDA163ECC880084A6B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AB750EE1163ECC890084A6B6 /* SkyBoxControlTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyBoxControlTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB750EE2163ECC890084A6B6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		AB750EE9163ECC890084A6B6 /* SkyBoxControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SkyBoxControlTests-Info.plist"; sourceTree = "<group>"; };
+		AB750EEB163ECC890084A6B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB750EED163ECC890084A6B6 /* SkyBoxControlTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkyBoxControlTests.h; sourceTree = "<group>"; };
+		AB750EEE163ECC890084A6B6 /* SkyBoxControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkyBoxControlTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB750EBD163ECC880084A6B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB750EC5163ECC880084A6B6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB750EDD163ECC890084A6B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB750EE3163ECC890084A6B6 /* SenTestingKit.framework in Frameworks */,
+				AB750EE4163ECC890084A6B6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB750EB5163ECC880084A6B6 = {
+			isa = PBXGroup;
+			children = (
+				AB750ECA163ECC880084A6B6 /* SkyBoxControl */,
+				AB750EE7163ECC890084A6B6 /* SkyBoxControlTests */,
+				AB750EC3163ECC880084A6B6 /* Frameworks */,
+				AB750EC1163ECC880084A6B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB750EC1163ECC880084A6B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB750EC0163ECC880084A6B6 /* SkyBoxControl.app */,
+				AB750EE1163ECC890084A6B6 /* SkyBoxControlTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB750EC3163ECC880084A6B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB750EC4163ECC880084A6B6 /* Cocoa.framework */,
+				AB750EE2163ECC890084A6B6 /* SenTestingKit.framework */,
+				AB750EC6163ECC880084A6B6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB750EC6163ECC880084A6B6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB750EC7163ECC880084A6B6 /* AppKit.framework */,
+				AB750EC8163ECC880084A6B6 /* CoreData.framework */,
+				AB750EC9163ECC880084A6B6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AB750ECA163ECC880084A6B6 /* SkyBoxControl */ = {
+			isa = PBXGroup;
+			children = (
+				AB750ED6163ECC880084A6B6 /* SBCAppDelegate.h */,
+				AB750ED7163ECC880084A6B6 /* SBCAppDelegate.m */,
+				AB750ED9163ECC880084A6B6 /* MainMenu.xib */,
+				AB750ECB163ECC880084A6B6 /* Supporting Files */,
+			);
+			path = SkyBoxControl;
+			sourceTree = "<group>";
+		};
+		AB750ECB163ECC880084A6B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB750ECC163ECC880084A6B6 /* SkyBoxControl-Info.plist */,
+				AB750ECD163ECC880084A6B6 /* InfoPlist.strings */,
+				AB750ED0163ECC880084A6B6 /* main.m */,
+				AB750ED2163ECC880084A6B6 /* SkyBoxControl-Prefix.pch */,
+				AB750ED3163ECC880084A6B6 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB750EE7163ECC890084A6B6 /* SkyBoxControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB750EED163ECC890084A6B6 /* SkyBoxControlTests.h */,
+				AB750EEE163ECC890084A6B6 /* SkyBoxControlTests.m */,
+				AB750EE8163ECC890084A6B6 /* Supporting Files */,
+			);
+			path = SkyBoxControlTests;
+			sourceTree = "<group>";
+		};
+		AB750EE8163ECC890084A6B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB750EE9163ECC890084A6B6 /* SkyBoxControlTests-Info.plist */,
+				AB750EEA163ECC890084A6B6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB750EBF163ECC880084A6B6 /* SkyBoxControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB750EF2163ECC890084A6B6 /* Build configuration list for PBXNativeTarget "SkyBoxControl" */;
+			buildPhases = (
+				AB750EBC163ECC880084A6B6 /* Sources */,
+				AB750EBD163ECC880084A6B6 /* Frameworks */,
+				AB750EBE163ECC880084A6B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyBoxControl;
+			productName = SkyBoxControl;
+			productReference = AB750EC0163ECC880084A6B6 /* SkyBoxControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB750EE0163ECC890084A6B6 /* SkyBoxControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB750EF5163ECC890084A6B6 /* Build configuration list for PBXNativeTarget "SkyBoxControlTests" */;
+			buildPhases = (
+				AB750EDC163ECC890084A6B6 /* Sources */,
+				AB750EDD163ECC890084A6B6 /* Frameworks */,
+				AB750EDE163ECC890084A6B6 /* Resources */,
+				AB750EDF163ECC890084A6B6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB750EE6163ECC890084A6B6 /* PBXTargetDependency */,
+			);
+			name = SkyBoxControlTests;
+			productName = SkyBoxControlTests;
+			productReference = AB750EE1163ECC890084A6B6 /* SkyBoxControlTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB750EB7163ECC880084A6B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SBC;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Jonathan Bailey";
+			};
+			buildConfigurationList = AB750EBA163ECC880084A6B6 /* Build configuration list for PBXProject "SkyBoxControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB750EB5163ECC880084A6B6;
+			productRefGroup = AB750EC1163ECC880084A6B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB750EBF163ECC880084A6B6 /* SkyBoxControl */,
+				AB750EE0163ECC890084A6B6 /* SkyBoxControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB750EBE163ECC880084A6B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB750ECF163ECC880084A6B6 /* InfoPlist.strings in Resources */,
+				AB750ED5163ECC880084A6B6 /* Credits.rtf in Resources */,
+				AB750EDB163ECC880084A6B6 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB750EDE163ECC890084A6B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB750EEC163ECC890084A6B6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB750EDF163ECC890084A6B6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB750EBC163ECC880084A6B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB750ED1163ECC880084A6B6 /* main.m in Sources */,
+				AB750ED8163ECC880084A6B6 /* SBCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB750EDC163ECC890084A6B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB750EEF163ECC890084A6B6 /* SkyBoxControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB750EE6163ECC890084A6B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB750EBF163ECC880084A6B6 /* SkyBoxControl */;
+			targetProxy = AB750EE5163ECC890084A6B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB750ECD163ECC880084A6B6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB750ECE163ECC880084A6B6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AB750ED3163ECC880084A6B6 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB750ED4163ECC880084A6B6 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AB750ED9163ECC880084A6B6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB750EDA163ECC880084A6B6 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AB750EEA163ECC890084A6B6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB750EEB163ECC890084A6B6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB750EF0163ECC890084A6B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AB750EF1163ECC890084A6B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AB750EF3163ECC890084A6B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SkyBoxControl/SkyBoxControl-Prefix.pch";
+				INFOPLIST_FILE = "SkyBoxControl/SkyBoxControl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AB750EF4163ECC890084A6B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SkyBoxControl/SkyBoxControl-Prefix.pch";
+				INFOPLIST_FILE = "SkyBoxControl/SkyBoxControl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AB750EF6163ECC890084A6B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SkyBoxControl.app/Contents/MacOS/SkyBoxControl";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SkyBoxControl/SkyBoxControl-Prefix.pch";
+				INFOPLIST_FILE = "SkyBoxControlTests/SkyBoxControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		AB750EF7163ECC890084A6B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SkyBoxControl.app/Contents/MacOS/SkyBoxControl";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SkyBoxControl/SkyBoxControl-Prefix.pch";
+				INFOPLIST_FILE = "SkyBoxControlTests/SkyBoxControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB750EBA163ECC880084A6B6 /* Build configuration list for PBXProject "SkyBoxControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB750EF0163ECC890084A6B6 /* Debug */,
+				AB750EF1163ECC890084A6B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB750EF2163ECC890084A6B6 /* Build configuration list for PBXNativeTarget "SkyBoxControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB750EF3163ECC890084A6B6 /* Debug */,
+				AB750EF4163ECC890084A6B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB750EF5163ECC890084A6B6 /* Build configuration list for PBXNativeTarget "SkyBoxControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB750EF6163ECC890084A6B6 /* Debug */,
+				AB750EF7163ECC890084A6B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB750EB7163ECC880084A6B6 /* Project object */;
+}
