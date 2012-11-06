@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0A61C61643407700A5D3D8 /* SBCAggregateSkyBox.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A61C51643407700A5D3D8 /* SBCAggregateSkyBox.m */; };
+		AB36118D163F1661007C52F5 /* NSArray+JP.m in Sources */ = {isa = PBXBuildFile; fileRef = AB36117E163F1661007C52F5 /* NSArray+JP.m */; };
+		AB36118E163F1661007C52F5 /* NSDate+JP.m in Sources */ = {isa = PBXBuildFile; fileRef = AB361180163F1661007C52F5 /* NSDate+JP.m */; };
+		AB36118F163F1661007C52F5 /* NSDictionary+JP.m in Sources */ = {isa = PBXBuildFile; fileRef = AB361182163F1661007C52F5 /* NSDictionary+JP.m */; };
+		AB361190163F1661007C52F5 /* NSString+JP.m in Sources */ = {isa = PBXBuildFile; fileRef = AB361184163F1661007C52F5 /* NSString+JP.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AB361191163F1661007C52F5 /* UIColor+JP.m in Sources */ = {isa = PBXBuildFile; fileRef = AB361186163F1661007C52F5 /* UIColor+JP.m */; };
+		AB361192163F1661007C52F5 /* UINavigationBar+JP.m in Sources */ = {isa = PBXBuildFile; fileRef = AB361188163F1661007C52F5 /* UINavigationBar+JP.m */; };
+		AB361193163F1661007C52F5 /* UIViewController+JP.m in Sources */ = {isa = PBXBuildFile; fileRef = AB36118A163F1661007C52F5 /* UIViewController+JP.m */; };
+		AB361194163F1661007C52F5 /* UIWebView+JP.m in Sources */ = {isa = PBXBuildFile; fileRef = AB36118C163F1661007C52F5 /* UIWebView+JP.m */; };
+		AB36119B163F1A66007C52F5 /* JPSubscripting.m in Sources */ = {isa = PBXBuildFile; fileRef = AB36119A163F1A66007C52F5 /* JPSubscripting.m */; };
+		AB36119D163F1B87007C52F5 /* JPSubscripting.m in Sources */ = {isa = PBXBuildFile; fileRef = AB36119A163F1A66007C52F5 /* JPSubscripting.m */; };
 		AB750EC5163ECC880084A6B6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB750EC4163ECC880084A6B6 /* Cocoa.framework */; };
 		AB750ECF163ECC880084A6B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB750ECD163ECC880084A6B6 /* InfoPlist.strings */; };
 		AB750ED1163ECC880084A6B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB750ED0163ECC880084A6B6 /* main.m */; };
@@ -17,6 +28,21 @@
 		AB750EE4163ECC890084A6B6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB750EC4163ECC880084A6B6 /* Cocoa.framework */; };
 		AB750EEC163ECC890084A6B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB750EEA163ECC890084A6B6 /* InfoPlist.strings */; };
 		AB750EEF163ECC890084A6B6 /* SkyBoxControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB750EEE163ECC890084A6B6 /* SkyBoxControlTests.m */; };
+		AB750EFC163ECDF10084A6B6 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AB750EF9163ECDF10084A6B6 /* GCDAsyncSocket.m */; };
+		AB750EFD163ECDF10084A6B6 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AB750EFB163ECDF10084A6B6 /* GCDAsyncUdpSocket.m */; };
+		AB750F01163ECE3E0084A6B6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB750F00163ECE3E0084A6B6 /* Security.framework */; };
+		AB750F04163EE4E00084A6B6 /* UFResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AB750F03163EE4E00084A6B6 /* UFResponse.m */; };
+		ABBFDAED1642873600926EDC /* UFControlPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBFDAEC1642873600926EDC /* UFControlPoint.m */; };
+		ABC1FA93163FEDE7007E0DB3 /* PXSourceList.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1FA90163FEDE7007E0DB3 /* PXSourceList.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		ABC1FA99163FFC0E007E0DB3 /* SkyBoxIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC1FA98163FFC0E007E0DB3 /* SkyBoxIcon.png */; };
+		ABC1FAD416413B9D007E0DB3 /* UFService.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1FACF16413B9D007E0DB3 /* UFService.m */; };
+		ABC1FAD516413B9D007E0DB3 /* UFIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1FAD116413B9D007E0DB3 /* UFIcon.m */; };
+		ABC1FAD616413B9D007E0DB3 /* UFDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1FAD316413B9D007E0DB3 /* UFDevice.m */; };
+		ABC1FAD716413B9F007E0DB3 /* UFService.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1FACF16413B9D007E0DB3 /* UFService.m */; };
+		ABC1FAD816413BA1007E0DB3 /* UFIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1FAD116413B9D007E0DB3 /* UFIcon.m */; };
+		ABC1FAD916413BA4007E0DB3 /* UFDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1FAD316413B9D007E0DB3 /* UFDevice.m */; };
+		ABC1FADC16413CAD007E0DB3 /* UFAction.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1FADB16413CAD007E0DB3 /* UFAction.m */; };
+		ABC1FADF16413EA3007E0DB3 /* UFArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1FADE16413EA3007E0DB3 /* UFArgument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +56,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB0A61C41643407700A5D3D8 /* SBCAggregateSkyBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCAggregateSkyBox.h; sourceTree = "<group>"; };
+		AB0A61C51643407700A5D3D8 /* SBCAggregateSkyBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCAggregateSkyBox.m; sourceTree = "<group>"; };
+		AB36117C163F1661007C52F5 /* JPCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPCategories.h; sourceTree = "<group>"; };
+		AB36117D163F1661007C52F5 /* NSArray+JP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JP.h"; sourceTree = "<group>"; };
+		AB36117E163F1661007C52F5 /* NSArray+JP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JP.m"; sourceTree = "<group>"; };
+		AB36117F163F1661007C52F5 /* NSDate+JP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JP.h"; sourceTree = "<group>"; };
+		AB361180163F1661007C52F5 /* NSDate+JP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JP.m"; sourceTree = "<group>"; };
+		AB361181163F1661007C52F5 /* NSDictionary+JP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JP.h"; sourceTree = "<group>"; };
+		AB361182163F1661007C52F5 /* NSDictionary+JP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JP.m"; sourceTree = "<group>"; };
+		AB361183163F1661007C52F5 /* NSString+JP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JP.h"; sourceTree = "<group>"; };
+		AB361184163F1661007C52F5 /* NSString+JP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JP.m"; sourceTree = "<group>"; };
+		AB361185163F1661007C52F5 /* UIColor+JP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JP.h"; sourceTree = "<group>"; };
+		AB361186163F1661007C52F5 /* UIColor+JP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JP.m"; sourceTree = "<group>"; };
+		AB361187163F1661007C52F5 /* UINavigationBar+JP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JP.h"; sourceTree = "<group>"; };
+		AB361188163F1661007C52F5 /* UINavigationBar+JP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JP.m"; sourceTree = "<group>"; };
+		AB361189163F1661007C52F5 /* UIViewController+JP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JP.h"; sourceTree = "<group>"; };
+		AB36118A163F1661007C52F5 /* UIViewController+JP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JP.m"; sourceTree = "<group>"; };
+		AB36118B163F1661007C52F5 /* UIWebView+JP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+JP.h"; sourceTree = "<group>"; };
+		AB36118C163F1661007C52F5 /* UIWebView+JP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+JP.m"; sourceTree = "<group>"; };
+		AB361199163F1A66007C52F5 /* JPSubscripting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSubscripting.h; sourceTree = "<group>"; };
+		AB36119A163F1A66007C52F5 /* JPSubscripting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSubscripting.m; sourceTree = "<group>"; };
 		AB750EC0163ECC880084A6B6 /* SkyBoxControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyBoxControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB750EC4163ECC880084A6B6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AB750EC7163ECC880084A6B6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -49,6 +96,31 @@
 		AB750EEB163ECC890084A6B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB750EED163ECC890084A6B6 /* SkyBoxControlTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkyBoxControlTests.h; sourceTree = "<group>"; };
 		AB750EEE163ECC890084A6B6 /* SkyBoxControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkyBoxControlTests.m; sourceTree = "<group>"; };
+		AB750EF8163ECDF10084A6B6 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		AB750EF9163ECDF10084A6B6 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		AB750EFA163ECDF10084A6B6 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		AB750EFB163ECDF10084A6B6 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		AB750EFE163ECE180084A6B6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AB750F00163ECE3E0084A6B6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AB750F02163EE4E00084A6B6 /* UFResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UFResponse.h; sourceTree = "<group>"; };
+		AB750F03163EE4E00084A6B6 /* UFResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFResponse.m; sourceTree = "<group>"; };
+		ABBFDAEB1642873600926EDC /* UFControlPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UFControlPoint.h; sourceTree = "<group>"; };
+		ABBFDAEC1642873600926EDC /* UFControlPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFControlPoint.m; sourceTree = "<group>"; };
+		ABC1FA8F163FEDE7007E0DB3 /* PXSourceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PXSourceList.h; path = "../../../../Downloads/Perspx-PXSourceList-0abec5e/PXSourceList/PXSourceList.h"; sourceTree = "<group>"; };
+		ABC1FA90163FEDE7007E0DB3 /* PXSourceList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PXSourceList.m; path = "../../../../Downloads/Perspx-PXSourceList-0abec5e/PXSourceList/PXSourceList.m"; sourceTree = "<group>"; };
+		ABC1FA91163FEDE7007E0DB3 /* PXSourceListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PXSourceListDataSource.h; path = "../../../../Downloads/Perspx-PXSourceList-0abec5e/PXSourceList/PXSourceListDataSource.h"; sourceTree = "<group>"; };
+		ABC1FA92163FEDE7007E0DB3 /* PXSourceListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PXSourceListDelegate.h; path = "../../../../Downloads/Perspx-PXSourceList-0abec5e/PXSourceList/PXSourceListDelegate.h"; sourceTree = "<group>"; };
+		ABC1FA98163FFC0E007E0DB3 /* SkyBoxIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SkyBoxIcon.png; sourceTree = "<group>"; };
+		ABC1FACE16413B9D007E0DB3 /* UFService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UFService.h; sourceTree = "<group>"; };
+		ABC1FACF16413B9D007E0DB3 /* UFService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFService.m; sourceTree = "<group>"; };
+		ABC1FAD016413B9D007E0DB3 /* UFIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UFIcon.h; sourceTree = "<group>"; };
+		ABC1FAD116413B9D007E0DB3 /* UFIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFIcon.m; sourceTree = "<group>"; };
+		ABC1FAD216413B9D007E0DB3 /* UFDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UFDevice.h; sourceTree = "<group>"; };
+		ABC1FAD316413B9D007E0DB3 /* UFDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFDevice.m; sourceTree = "<group>"; };
+		ABC1FADA16413CAD007E0DB3 /* UFAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UFAction.h; sourceTree = "<group>"; };
+		ABC1FADB16413CAD007E0DB3 /* UFAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFAction.m; sourceTree = "<group>"; };
+		ABC1FADD16413EA3007E0DB3 /* UFArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UFArgument.h; sourceTree = "<group>"; };
+		ABC1FADE16413EA3007E0DB3 /* UFArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFArgument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB750F01163ECE3E0084A6B6 /* Security.framework in Frameworks */,
 				AB750EC5163ECC880084A6B6 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,9 +145,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB36117B163F1661007C52F5 /* JPCategories */ = {
+			isa = PBXGroup;
+			children = (
+				AB36117C163F1661007C52F5 /* JPCategories.h */,
+				AB361199163F1A66007C52F5 /* JPSubscripting.h */,
+				AB36119A163F1A66007C52F5 /* JPSubscripting.m */,
+				AB36117D163F1661007C52F5 /* NSArray+JP.h */,
+				AB36117E163F1661007C52F5 /* NSArray+JP.m */,
+				AB36117F163F1661007C52F5 /* NSDate+JP.h */,
+				AB361180163F1661007C52F5 /* NSDate+JP.m */,
+				AB361181163F1661007C52F5 /* NSDictionary+JP.h */,
+				AB361182163F1661007C52F5 /* NSDictionary+JP.m */,
+				AB361183163F1661007C52F5 /* NSString+JP.h */,
+				AB361184163F1661007C52F5 /* NSString+JP.m */,
+				AB361185163F1661007C52F5 /* UIColor+JP.h */,
+				AB361186163F1661007C52F5 /* UIColor+JP.m */,
+				AB361187163F1661007C52F5 /* UINavigationBar+JP.h */,
+				AB361188163F1661007C52F5 /* UINavigationBar+JP.m */,
+				AB361189163F1661007C52F5 /* UIViewController+JP.h */,
+				AB36118A163F1661007C52F5 /* UIViewController+JP.m */,
+				AB36118B163F1661007C52F5 /* UIWebView+JP.h */,
+				AB36118C163F1661007C52F5 /* UIWebView+JP.m */,
+			);
+			name = JPCategories;
+			path = ../../../../Git/JPGeneral/JPCategories;
+			sourceTree = "<group>";
+		};
 		AB750EB5163ECC880084A6B6 = {
 			isa = PBXGroup;
 			children = (
+				ABC1FA8F163FEDE7007E0DB3 /* PXSourceList.h */,
+				ABC1FA90163FEDE7007E0DB3 /* PXSourceList.m */,
+				ABC1FA91163FEDE7007E0DB3 /* PXSourceListDataSource.h */,
+				ABC1FA92163FEDE7007E0DB3 /* PXSourceListDelegate.h */,
+				AB36117B163F1661007C52F5 /* JPCategories */,
+				AB750F00163ECE3E0084A6B6 /* Security.framework */,
+				AB750EFE163ECE180084A6B6 /* CFNetwork.framework */,
 				AB750ECA163ECC880084A6B6 /* SkyBoxControl */,
 				AB750EE7163ECC890084A6B6 /* SkyBoxControlTests */,
 				AB750EC3163ECC880084A6B6 /* Frameworks */,
@@ -114,9 +221,17 @@
 		AB750ECA163ECC880084A6B6 /* SkyBoxControl */ = {
 			isa = PBXGroup;
 			children = (
+				ABC1FAB81641346C007E0DB3 /* UPnP */,
+				AB750EF8163ECDF10084A6B6 /* GCDAsyncSocket.h */,
+				AB750EF9163ECDF10084A6B6 /* GCDAsyncSocket.m */,
+				AB750EFA163ECDF10084A6B6 /* GCDAsyncUdpSocket.h */,
+				AB750EFB163ECDF10084A6B6 /* GCDAsyncUdpSocket.m */,
 				AB750ED6163ECC880084A6B6 /* SBCAppDelegate.h */,
 				AB750ED7163ECC880084A6B6 /* SBCAppDelegate.m */,
+				AB0A61C41643407700A5D3D8 /* SBCAggregateSkyBox.h */,
+				AB0A61C51643407700A5D3D8 /* SBCAggregateSkyBox.m */,
 				AB750ED9163ECC880084A6B6 /* MainMenu.xib */,
+				ABC1FA98163FFC0E007E0DB3 /* SkyBoxIcon.png */,
 				AB750ECB163ECC880084A6B6 /* Supporting Files */,
 			);
 			path = SkyBoxControl;
@@ -151,6 +266,27 @@
 				AB750EEA163ECC890084A6B6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABC1FAB81641346C007E0DB3 /* UPnP */ = {
+			isa = PBXGroup;
+			children = (
+				ABC1FACE16413B9D007E0DB3 /* UFService.h */,
+				ABC1FACF16413B9D007E0DB3 /* UFService.m */,
+				ABC1FADA16413CAD007E0DB3 /* UFAction.h */,
+				ABC1FADB16413CAD007E0DB3 /* UFAction.m */,
+				ABC1FADD16413EA3007E0DB3 /* UFArgument.h */,
+				ABC1FADE16413EA3007E0DB3 /* UFArgument.m */,
+				ABC1FAD016413B9D007E0DB3 /* UFIcon.h */,
+				ABC1FAD116413B9D007E0DB3 /* UFIcon.m */,
+				ABC1FAD216413B9D007E0DB3 /* UFDevice.h */,
+				ABC1FAD316413B9D007E0DB3 /* UFDevice.m */,
+				ABBFDAEB1642873600926EDC /* UFControlPoint.h */,
+				ABBFDAEC1642873600926EDC /* UFControlPoint.m */,
+				AB750F02163EE4E00084A6B6 /* UFResponse.h */,
+				AB750F03163EE4E00084A6B6 /* UFResponse.m */,
+			);
+			name = UPnP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +364,7 @@
 				AB750ECF163ECC880084A6B6 /* InfoPlist.strings in Resources */,
 				AB750ED5163ECC880084A6B6 /* Credits.rtf in Resources */,
 				AB750EDB163ECC880084A6B6 /* MainMenu.xib in Resources */,
+				ABC1FA99163FFC0E007E0DB3 /* SkyBoxIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +401,26 @@
 			files = (
 				AB750ED1163ECC880084A6B6 /* main.m in Sources */,
 				AB750ED8163ECC880084A6B6 /* SBCAppDelegate.m in Sources */,
+				AB750EFC163ECDF10084A6B6 /* GCDAsyncSocket.m in Sources */,
+				AB750EFD163ECDF10084A6B6 /* GCDAsyncUdpSocket.m in Sources */,
+				AB750F04163EE4E00084A6B6 /* UFResponse.m in Sources */,
+				AB36119D163F1B87007C52F5 /* JPSubscripting.m in Sources */,
+				AB36118D163F1661007C52F5 /* NSArray+JP.m in Sources */,
+				AB36118E163F1661007C52F5 /* NSDate+JP.m in Sources */,
+				AB36118F163F1661007C52F5 /* NSDictionary+JP.m in Sources */,
+				AB361190163F1661007C52F5 /* NSString+JP.m in Sources */,
+				AB361191163F1661007C52F5 /* UIColor+JP.m in Sources */,
+				AB361192163F1661007C52F5 /* UINavigationBar+JP.m in Sources */,
+				AB361193163F1661007C52F5 /* UIViewController+JP.m in Sources */,
+				AB361194163F1661007C52F5 /* UIWebView+JP.m in Sources */,
+				ABC1FA93163FEDE7007E0DB3 /* PXSourceList.m in Sources */,
+				ABC1FAD716413B9F007E0DB3 /* UFService.m in Sources */,
+				ABC1FAD816413BA1007E0DB3 /* UFIcon.m in Sources */,
+				ABC1FAD916413BA4007E0DB3 /* UFDevice.m in Sources */,
+				ABC1FADC16413CAD007E0DB3 /* UFAction.m in Sources */,
+				ABC1FADF16413EA3007E0DB3 /* UFArgument.m in Sources */,
+				ABBFDAED1642873600926EDC /* UFControlPoint.m in Sources */,
+				AB0A61C61643407700A5D3D8 /* SBCAggregateSkyBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +429,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB750EEF163ECC890084A6B6 /* SkyBoxControlTests.m in Sources */,
+				AB36119B163F1A66007C52F5 /* JPSubscripting.m in Sources */,
+				ABC1FAD416413B9D007E0DB3 /* UFService.m in Sources */,
+				ABC1FAD516413B9D007E0DB3 /* UFIcon.m in Sources */,
+				ABC1FAD616413B9D007E0DB3 /* UFDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,10 +538,19 @@
 		AB750EF3163ECC890084A6B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Desktop\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SkyBoxControl/SkyBoxControl-Prefix.pch";
 				INFOPLIST_FILE = "SkyBoxControl/SkyBoxControl-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(LOCAL_LIBRARY_DIR)/Frameworks/CyberLink.framework/Versions/A\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,10 +559,19 @@
 		AB750EF4163ECC890084A6B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Desktop\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SkyBoxControl/SkyBoxControl-Prefix.pch";
 				INFOPLIST_FILE = "SkyBoxControl/SkyBoxControl-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(LOCAL_LIBRARY_DIR)/Frameworks/CyberLink.framework/Versions/A\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -447,6 +626,7 @@
 				AB750EF4163ECC890084A6B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB750EF5163ECC890084A6B6 /* Build configuration list for PBXNativeTarget "SkyBoxControlTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +635,7 @@
 				AB750EF7163ECC890084A6B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
