@@ -7,7 +7,6 @@
 //
 
 #import "SBCAppDelegate.h"
-#import "SBCDiscoverer.h"
 #import "SBCAggregateSkyBox.h"
 #import "PXSourceList.h"
 #import "UFControlPoint.h"
@@ -94,6 +93,7 @@
 	if (cs == modifier * 12) {
 			return modifier * 30;
 	}
+	return cs;
 }
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	self.filteredDevices = [NSMutableArray array];
