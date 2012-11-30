@@ -12,6 +12,7 @@
 @class UFDevice;
 @protocol UFDeviceDelegate <NSObject>
 -(void)deviceIsNowReady:(UFDevice *)device;
+-(NSDictionary *)serviceClassMap;
 @optional
 -(void)device:(UFDevice *)device failedToBecomeReadyWithError:(NSError *)error;
 @end
@@ -41,4 +42,6 @@
 -(id)initWithResponseString:(NSString *)string;
 -(UFService *)serviceForId:(NSString *)serviceId;
 -(UFService *)serviceForType:(NSString *)serviceType;
+//delegate from service
+-(void)serviceIsReady:(UFService *)service;
 @end

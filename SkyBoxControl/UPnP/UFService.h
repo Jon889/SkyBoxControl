@@ -19,7 +19,8 @@
 
 @property (nonatomic, strong) NSArray *actions;
 @property (nonatomic, strong) NSArray *stateVariables;
-
+@property (nonatomic) BOOL isReady;
 -(id)initWithXML:(id)xml parentDevice:(UFDevice *)pd;
 -(UFAction *)actionForName:(NSString *)name;
+-(void)subscribeToEvents;
 @end

@@ -9,13 +9,20 @@
 #import "SBCAggregateSkyBox.h"
 #import "UFDevice.h"
 #import "UFService.h"
+#import "UFContainer.h"
+#import "GTMNSString+HTML.h"
+#import "UFContentDirectoryService.h"
 
+@interface SBCAggregateSkyBox ()
+@property (nonatomic, strong) NSMutableArray *rootContainers;
+@end
 @implementation SBCAggregateSkyBox
 -(id)init {
 	if (self = [super init]) {
 		self.devices = [NSMutableArray array];
+		self.rootContainers = [NSMutableArray array];
 	}
-return self;
+	return self;
 }
 -(NSString *)description {
 	return [NSString stringWithFormat:@"%li", self.devices.count];
@@ -50,7 +57,17 @@ return self;
 	return ([serviceCollector count] > 0) ? serviceCollector[0] : nil;
 }
 
--(UFService *)skyPlayService {
+-(SBCPlayService *)skyPlayService {
 	return [self serviceForId:@"urn:nds-com:serviceId:SkyPlay2"];
+}
+-(UFContentDirectoryService *)skyBrowseService {
+	return [self serviceForId:@"urn:nds-com:serviceId:SkyBrowse2"];
+}
+-(UFService *)skyBookService {
+	return [self serviceForId:@"urn:nds-com:serviceId:SkyBook2"];
+}
+
+-(BOOL)isReady {
+	return [self.devices count] == 2;
 }
 @end

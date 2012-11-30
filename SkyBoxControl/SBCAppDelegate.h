@@ -7,13 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
-@class PXSourceList;
+@class PXSourceList, PXListView;
 @interface SBCAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 @property (unsafe_unretained) IBOutlet NSTextView *textView;
-@property (weak) IBOutlet PXSourceList *sourceList;
-@property (weak) IBOutlet NSTextField *startMessage;
+
 @property (weak) IBOutlet NSView *controlView;
+@property (weak) IBOutlet PXListView *listView;
+@property (weak) IBOutlet NSProgressIndicator *progressBar;
 
 @end

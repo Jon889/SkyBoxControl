@@ -9,7 +9,10 @@
 #import "UFService.h"
 #import "UFAction.h"
 #import "UFDevice.h"
-
+@interface UFService ()
+@property (nonatomic, strong) NSString *SID;
+@property (nonatomic) NSInteger subscribeTimeout;
+@end
 @implementation UFService
 -(id)initWithXML:(id)xml parentDevice:(UFDevice *)pd {
 	if (self = [super init]) {
@@ -52,14 +55,65 @@
 				[(NSMutableArray *)self.actions addObject:action];
 			}
 
-			
+			[self hasLoadedActions];
 		}];
 		
 //	}
+}
+-(void)hasLoadedActions {
+	self.isReady = YES;
+	[self.parentDevice serviceIsReady:self];
 }
 
 -(UFAction *)actionForName:(NSString *)name {
 	NSArray *actionsF = [self.actions filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"name == %@", name]];
 	return (actionsF.count == 0) ? nil : actionsF[0];
+}
+-(NSString *)description {
+	return [[super description] stringByAppendingString:self.serviceId];
+}
+-(void)subscribeToEvents {
+	NSURL *url;
+	NSURL *baseURL = [NSURL URLWithString:self.parentDevice.baseURL];
+	NSURL *controlURL = [NSURL URLWithString:self.eventSubURL];
+	if ([controlURL host]) {
+		url = controlURL;
+	} else {
+		url = [NSURL URLWithString:self.controlURL relativeToURL:baseURL];
+	}
+
+	NSArray *addresses = [[NSHost currentHost] addresses];
+	NSString *ipv4Address = nil;
+	for (NSString *address in addresses) {
+		if (![address hasPrefix:@"127"] && [address rangeOfString:@":"].location == NSNotFound) {
+			ipv4Address = address;
+			break;
+		}
+	}
+	
+	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+	[request addValue:@"<http://google.com/>" forHTTPHeaderField:@"CALLBACK"];
+	[request addValue:@"upnp:event" forHTTPHeaderField:@"NT"];
+	[request addValue:@"Second-300" forHTTPHeaderField:@"TIMEOUT"];
+	[request setHTTPMethod:@"SUBSCRIBE"];
+	
+	
+	[NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *r, NSData *d, NSError *e) {
+		NSHTTPURLResponse *resp = r;
+		NSInteger statusCode = [resp statusCode];
+		if (statusCode == 400) {
+			NSLog(@"Requst can't send SID as well as NT/Callback");
+		} else if (statusCode == 412) {
+			NSLog(@"Callback missing or invalid, or NT != upnp:event");
+		} else if (statusCode >= 500 && statusCode < 600) {
+			NSLog(@"Published unable to accept subscription (eg: due to insufficient resources)");
+		} else {
+			NSString *rSID = [resp allHeaderFields][@"SID"];
+			NSString *rtimeout = [resp allHeaderFields][@"TIMEOUT"];
+			if ([rSID isNotEmpty]) {
+				self.SID = rSID;
+			}
+		}
+	}];
 }
 @end

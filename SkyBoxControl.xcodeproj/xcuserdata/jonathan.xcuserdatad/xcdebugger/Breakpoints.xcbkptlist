@@ -4,16 +4,29 @@
    version = "1.0">
    <FileBreakpoints>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "SkyBoxControl/SBCAppDelegate.m"
-         timestampString = "373831707.344691"
+         timestampString = "375833866.479105"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "49"
-         endingLineNumber = "49"
-         landmarkName = "-ffButtonClicked:"
+         startingLineNumber = "145"
+         endingLineNumber = "145"
+         landmarkName = "-listView:cellForRow:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "SkyBoxControl/SBCPlannerCollection.m"
+         timestampString = "374894514.12984"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "36"
+         endingLineNumber = "36"
+         landmarkName = "-latestScheduleTimeInCollection"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -21,12 +34,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "SkyBoxControl/SBCAppDelegate.m"
-         timestampString = "373838019.740747"
+         timestampString = "375833866.479105"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "65"
-         endingLineNumber = "65"
-         landmarkName = "-pauseButtonClicked:"
+         startingLineNumber = "158"
+         endingLineNumber = "158"
+         landmarkName = "-listView:rowDoubleClicked:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -34,12 +47,38 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "SkyBoxControl/SBCAppDelegate.m"
-         timestampString = "373838044.596919"
+         timestampString = "375833866.479105"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "64"
-         endingLineNumber = "64"
-         landmarkName = "-pauseButtonClicked:"
+         startingLineNumber = "159"
+         endingLineNumber = "159"
+         landmarkName = "-listView:rowDoubleClicked:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "SkyBoxControl/UPnP/UFAction.m"
+         timestampString = "374895621.829954"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "103"
+         endingLineNumber = "103"
+         landmarkName = "-postWithArgumentDictionary:completionHandler:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "SkyBoxControl/SBCAppDelegate.m"
+         timestampString = "375833866.479105"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "114"
+         endingLineNumber = "114"
+         landmarkName = "-syncPlanner"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

@@ -36,8 +36,6 @@
 				[self.delegate performSelector:@selector(device:failedToBecomeReadyWithError:) withObject:self withObject:xmlError ?: error];
 			} else {
 				[self parseDescriptionDocument];
-				self.isReady = YES;
-				[self.delegate performSelector:@selector(deviceIsNowReady:) withObject:self];
 			}
 		}];
 	}
@@ -70,7 +68,15 @@
 	}
 	return nil;
 }
-
+-(Class)classForServiceType:(NSString *)serviceType {
+	if ([self.delegate conformsToProtocol:@protocol(UFDeviceDelegate)]) {
+		Class mappedClass = [self.delegate serviceClassMap][serviceType];
+		if (mappedClass && [mappedClass isSubclassOfClass:[UFService class]]) {
+			return mappedClass;
+		}
+	}
+	return [UFService class];
+}
 -(void)parseDescriptionDocument {
 	[self setDeviceType:[[self safeGetNodesForXPath:@"//device/deviceType"][0] stringValue]];
 	[self setFriendlyName:[[self safeGetNodesForXPath:@"//device/friendlyName"][0] stringValue]];
@@ -82,7 +88,8 @@
 	[self setBaseURL:[[self safeGetNodesForXPath:@"//URLBase"][0] stringValue]];
 	NSArray *services = [self safeGetNodesForXPath:@"//device/serviceList/service"];
 	for (id service in services) {
-		UFService *newservice = [[UFService alloc] initWithXML:service parentDevice:self];
+		NSString *serviceType = [[service nodesForXPath:@"./serviceType" error:nil][0] stringValue];
+		UFService *newservice = [[[self classForServiceType:serviceType] alloc] initWithXML:service parentDevice:self];
 		[(NSMutableArray *)self.services addObject:newservice];
 	}
 	
@@ -95,4 +102,16 @@
 	NSArray *services = [self.services filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"serviceType == %@", serviceType]][0];
 	return (services.count == 0) ? nil : services[0];
 }
+-(void)serviceIsReady:(UFService *)service {
+	for (UFService *service in self.services) {
+		if (![service isReady]) {
+			return;
+		}
+	}
+	self.isReady = YES;
+	[self.delegate performSelector:@selector(deviceIsNowReady:) withObject:self];
+}
+
+
+
 @end

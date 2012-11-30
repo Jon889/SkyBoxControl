@@ -19,6 +19,7 @@
 @interface UFControlPoint : NSObject <UFDeviceDelegate>
 @property (nonatomic, strong, readonly) NSArray *devices;
 @property (nonatomic, weak) id<UFControlPointDelegate> delegate;
+@property (nonatomic, strong) NSDictionary *serviceClassMap;
 -(BOOL)startSearching;
 -(void)stopSearching;
 @end
